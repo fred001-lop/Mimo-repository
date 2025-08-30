@@ -3,6 +3,12 @@ body{
     font-family: "Trebuchet MS";
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
 }
 
 
@@ -22,10 +28,13 @@ a{
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
-    display: block;
+    display: flex;
     text-align: center;
     margin: 10px;
     color: slateblue;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 
 
