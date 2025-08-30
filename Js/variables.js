@@ -1,2 +1,2 @@
-const sport = ("Futbol");
+let sport = ("Futbol");
 console.log(sport);
