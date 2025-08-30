@@ -1,4 +1,24 @@
+body{
+    background-color: slateblue;
+    font-family: "Trebuchet MS";
+    color: #fff;
+}
+
+
 img{
     width: 100px;
     height: 100px;
+    border-radius: 75px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+a{
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
 }
