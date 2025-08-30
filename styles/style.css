@@ -32,9 +32,14 @@ a{
     text-align: center;
     margin: 10px;
     color: slateblue;
-    width: 70%;
+    width: 20%;
     justify-content: center;
     align-items: center;
 }
 
+a:hover{
+    background-color: beige;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
