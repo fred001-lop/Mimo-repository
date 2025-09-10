@@ -1,8 +1,8 @@
 let inputValue = 10;
-let milesToKm = false;
-
+let milesToKm = true;
+let result = 0;
 if (milesToKm){
-    result = 0;
+    
 
     result = inputValue * 1.60934;
 
@@ -15,3 +15,11 @@ if (milesToKm){
 const resulString = `El valor ingresado es ${inputValue} y la conversion es: ${result}`;
 
 console.log(resulString);
+
+
+function react(){
+    const resultElement = document.getElementById('resulteElement'); resultElement.innerHTML = resulString;
+}
+function nuevo(){
+    document.getElementById('resulteElement').innerHTML = 'Conversion';
+}
