@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* 
+RESET & ROOT VARIABLES
+ */
 :root{
     --primaryColor: #333;
     --secon-color: #61dafb;
     --third-color: #000;
+    --four-color: #0077cc;
 }
 
 
@@ -18,9 +22,12 @@
 /* encabezado */
 header{
     background-color: #282C34;
-    padding: 15px 100%;
+    padding: 15px 0;
     position: fixed;
+    width: 100%;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 body{
@@ -31,7 +38,12 @@ body{
     align-items: center;
     padding: 40px 20px;
     min-height: 100vh;
+    margin-top: 100px;
+
     
+}
+body a{
+    color: #000;
 }
 
 header nav ul{
@@ -65,8 +77,8 @@ h1{
 }
 
 h2{
-    color: #555;
-    font-size: 0.65rem;
+    color: #666;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -78,12 +90,13 @@ p{
 }
 
 p a{
-    color: var(--secon-color);
+    color: var(--four-color);
     text-decoration: none;
 }
 
 p a:hover{
     text-decoration: underline;
+    color: #00f;
 }
 
 img{
@@ -97,6 +110,7 @@ img{
     color: #0077cc;
     font-weight: 600;
     margin-bottom: 6px;
+    margin-top: 10px;
     text-align: center;
     font-size: 1.1rem;
     text-decoration: none;
@@ -115,6 +129,7 @@ button{
     border: none;
     color: var(--third-color);
     font-weight: 700;
+    text-align: center;
     padding: 12px 30px;
     margin: 10px 5px 0 5px;
     border-radius: 30px;
@@ -128,6 +143,7 @@ button strong{
 
 button:hover{
     background-color: #21a1f1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .container{
@@ -137,6 +153,26 @@ button:hover{
     margin-top: 15px;
 }
 
+/*Responsive simple*/
+@media(max-width: 600px){
+    header nav ul{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
 
 
 
